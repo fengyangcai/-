@@ -1,0 +1,35 @@
+drop table if exists tb_user;
+
+/*==============================================================*/
+/* Table: tb_user                                                */
+/*==============================================================*/
+create table tb_user
+(
+   id                   bigint not null auto_increment,
+   account              varchar(20),
+   password             varchar(20),
+   user_name            varchar(20),
+   gender               int,
+   age                  int,
+   birthday             datetime,
+   create_time          datetime,
+   primary key (id)
+);
+
+INSERT INTO tb_user (account, password, user_name, gender, age, birthday, create_time) 
+VALUES ('lilei', '123456', '李雷', 1, 15, '2001-01-01 01:01:38', '2016-03-01 19:09:55');
+
+INSERT INTO tb_user (account, password, user_name, gender, age, birthday, create_time) 
+VALUES ('hanmeimei', '123456', '韩梅梅', 0, 14, '2002-01-01 01:01:38', '2016-03-01 19:09:55');
+
+INSERT INTO tb_user (account, password, user_name, gender, age, birthday, create_time) 
+VALUES ('lucy', '123456', '露西', 0, 13, '2003-01-01 01:01:38', '2016-03-01 19:09:55');
+
+INSERT INTO tb_user (account, password, user_name, gender, age, birthday, create_time) 
+VALUES ('lily', '123456', '莉莉', 0, 13, '2003-01-01 01:01:38', '2016-03-01 19:09:55');
+
+INSERT INTO tb_user (account, password, user_name, gender, age, birthday, create_time) 
+VALUES ('jim', '123456', 'Jim Green', 1, 14, '2002-01-01 01:01:38', '2016-03-01 19:09:55');
+
+INSERT INTO tb_user (account, password, user_name, gender, age, birthday, create_time) 
+VALUES ('unclewang', '123456', '王大叔', 1, 43, '1973-01-01 01:01:38', '2016-03-01 19:09:55');
